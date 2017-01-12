@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test of imagepager</title>
+</head>
+<body>
+Below is the table holding the Archives's image Gallery.
+<table id="image-gallery"><tr><td>Replace This</td></tr></table>
+<script src="/js/imagepager.js"></script>
+<script>
+var ip = MakePager("ip", "image-gallery");
+
+ip.AddPage(
+    "/graphics/gallery/pneumatics1.jpg", 
+    "/photogallery/pneumatics.html", 
+    "Pneumatics"
+);
+
+ip.AddPage(
+    "/graphics/gallery/andromeda1.jpg",
+    "/photogallery/andromeda.html",
+    "Andromeda"
+);
+
+ip.AddPage(
+    "/graphics/gallery/feynman-freshman1.jpg",
+    "/photogallery/feynman-freshman.html",
+    "Feynan with Freshman"
+);
+
+ip.AddPage(
+    "/graphics/gallery/mr-starstuff1.jpg",
+    "/photogallery/mr-star-stuff.html",
+    "Mr. Star Stuff"
+);
+
+ip.AddPage(
+    "/graphics/gallery/porters-palomar1.jpg",
+    "/photogallery/porters-palomar.html",
+    "Porter's Palomar"
+);
+
+ip.AddPage(
+    "/graphics/gallery/rocket-men1.jpg",
+    "/photogallery/rocket-men.html",
+    "Rocket Men"
+);
+
+// Render the last image added
+ip.Last()
+    </script>
+</body>
+</html>
