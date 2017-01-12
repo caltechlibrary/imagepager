@@ -9,6 +9,7 @@ VERSION = $(shell grep 'Version = "' $(PROJECT).js | cut -d\" -f 2)
 BRANCH = $(shell git branch | grep '* ' | cut -d\  -f 2)
 
 build:
+	cp -v $(PROJECT).js demo/js/
 
 save:
 	git commit -am "Quick Save"
