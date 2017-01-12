@@ -11,6 +11,9 @@ BRANCH = $(shell git branch | grep '* ' | cut -d\  -f 2)
 build:
 	cp -v $(PROJECT).js demo/js/
 
+status:
+	git status
+
 save:
 	git commit -am "Quick Save"
 	git push origin $(BRANCH)
